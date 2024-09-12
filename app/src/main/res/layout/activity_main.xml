@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width= "0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:background="@color/black"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTACT"
+            android:layout_marginTop="200dp"
+            android:letterSpacing=".3"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+         <ImageView
+             android:src="@drawable/baseline_phone_24_whit"
+             android:layout_width="wrap_content"
+             android:layout_height="15dp"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="099999999999"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/baseline_email_24_white"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sulayao@gmail.com"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/baseline_pin_drop_24_white"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="143 address st. address Quezon City"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDUCATION"
+            android:layout_marginTop="20dp"
+            android:letterSpacing=".3"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quezon City Polytechnic University"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B.S in Information Technology"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKILLS"
+            android:layout_marginTop="20dp"
+            android:letterSpacing=".3"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JAVA"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        <SeekBar
+            android:id="@+id/java"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progressDrawable="@drawable/custom_seekbar_progress"
+            android:progress="60"
+            android:clickable="false"
+            android:focusable="false"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MYSQL"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:max="100"
+            android:id="@+id/mysql"
+            android:progressDrawable="@drawable/custom_seekbar_progress"
+            android:progress="70"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHP"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:max="100"
+            android:id="@+id/php"
+            android:progressDrawable="@drawable/custom_seekbar_progress"
+            android:progress="80"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Development"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:max="100"
+            android:id="@+id/android"
+            android:progressDrawable="@drawable/custom_seekbar_progress"
+            android:progress="65"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HTML"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:max="100"
+            android:id="@+id/html"
+            android:progressDrawable="@drawable/custom_seekbar_progress"
+            android:progress="85"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Database Managaement"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:max="100"
+            android:id="@+id/database"
+            android:progressDrawable="@drawable/custom_seekbar_progress"
+            android:progress="50"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="API Integration"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:max="100"
+            android:id="@+id/api"
+            android:progressDrawable="@drawable/custom_seekbar_progress"
+            android:progress="55"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LANGUAGE"
+            android:layout_marginTop="20dp"
+            android:letterSpacing=".3"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Tagalog"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:id="@+id/tagalog"
+            android:progressDrawable="@drawable/custom_seekbar_progress"
+            android:progress="100"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:max="100"
+            android:progressDrawable="@drawable/custom_seekbar_progress"
+            android:progress="70"
+            android:id="@+id/english"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width= "0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.7"
+        >
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check to hide left details"
+            android:checked="false"
+            android:layout_gravity="right"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal"
+            android:layout_marginTop="80dp">
+
+            <ImageView
+                android:layout_width="145dp"
+                android:layout_height="155dp"
+                android:layout_gravity="start"
+                android:src="@mipmap/smiley" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MHIAMOR PILI"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:text="Information Systems Analyst II"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:letterSpacing=".3"
+                android:text="ABOUT ME"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Accomplished Information Systems Analyst with a strong technical background in software design, development, and testing. Experienced of working with stakeholders to assess business needs and develop solutions"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:letterSpacing=".3"
+                android:text="EXPERIENCE"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Information Systems Analyst II"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="2021 - Present"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="start"
+                    android:textStyle="bold"
+                    android:text="PHILIPPINE STATISTICS AUTHORITY"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Developed a user-friendly mobile application to use in a survey interview for a government agency."/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Troubleshot and resolved system issues in a timely and efficient manner"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Troubleshot and resolved system issues in a timely and efficient manner"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:gravity="start"
+                    android:text="Software Engineer"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:gravity="end"
+                    android:text="2020 - 2021"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="start"
+                    android:textStyle="bold"
+                    android:text="NULAVIE PTY LTD"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Utilized object-oriented design principles to develop high quality website applications.
+"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Collaborated with a team of software engineers to design and develop efficient software solutions.
+"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Maintained and updated existing website applications to ensure they stayed up to date with changing technology"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="start"
+                    android:text="IT Specialist"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="end"
+                    android:text="2021 - Present"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="start"
+                    android:textStyle="bold"
+                    android:text="OPERATIVE SOLUTIONS INC"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Successfully designed and implemented a new database system, resulting in increased efficiency and productivity."/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Utilized advanced technologies such as MySQL to create complex web-based applications"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Developed an innovative and secure system for data storage and retrieval."/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:letterSpacing=".3"
+                android:text="CERTIFICATES"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="start"
+                    android:textStyle="bold"
+                    android:text="3rd QCPU I.T Summit 2017"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="start"
+                    android:textStyle="bold"
+                    android:text="Java Spring Rest Services &amp; Front-End Frameworks Training"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="start"
+                    android:textStyle="bold"
+                    android:text="Advanced Database Management Using MySQL Training"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
